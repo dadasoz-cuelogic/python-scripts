@@ -1,0 +1,6 @@
+Z = zip((1, 2, 3), (10, 11, 12), (20, 21, 22))
+I1 = iter(Z)
+I2 = iter(Z)
+print next(I2)
+print next(I2)
+print next(I2)
