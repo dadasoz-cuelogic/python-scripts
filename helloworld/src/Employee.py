@@ -1,5 +1,6 @@
 from person import Person
 class employee(Person):
+    'Employee class: Inherits Person and derived in manager'
     def __init__(self,name,age,id,loc,desg):
         print('Constructor called') 
         self.id = id
@@ -12,8 +13,9 @@ class employee(Person):
         
     def display(self):
         print('%s    :    %s' % (self.id,self.loc))
-    
-   
+        
+    def checkDoc(self):
+        print('EMPLOYEE.__doc    :    ', employee.__doc__)
        
         
     

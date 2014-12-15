@@ -5,9 +5,14 @@ import inheritance2
 from inheritance2 import Child
 if __name__ == "__main__":
     
-    obj1 = employee('vishal', 25, 273913, 'pune', 'SD')
+    obj1 = manager('vishal', 25, 273913, 'pune', 'SD', "HR")
     obj1.display()
+    employee.display(obj1)
     person.Person.display(obj1)
+    obj1.checkDoc()
+    employee.checkDoc(obj1)
+    person.Person.checkDoc(obj1)
+    
     
     
     c = Child()          # instance of child
