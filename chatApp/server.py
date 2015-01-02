@@ -16,26 +16,33 @@ userobj={}
 
 
 def findDict(dictn,dict1,key):
-    keys= dict1.keys()
-    dict1= dict1.get(keys[0])
-    if(len(users)!=0):
-        for data in dictn.values():
-            if(dict1[key]==data[key]):
-                return keys
-    return "n"
+    try:
+        keys= dict1.keys()
+        dict1= dict1.get(keys[0])
+        if(len(users)!=0):
+            for data in dictn.values():
+                if(dict1[key]==data[key]):
+                    return keys
+        return "n"
+    except:
+        pass
    
 def addUsers(conn,username):
-    usersCount=len(logins)+1
-    newUsr={str(usersCount):{"username":username}}
-    newuserobj={username:conn}
-    if(findDict(logins, newUsr,"username") =="n"):
-        logins.update(newUsr)
-        userobj.update(newuserobj)
-        print "User added: ",logins
-        
+    try:
+        usersCount=len(logins)+1
+        newUsr={str(usersCount):{"username":username}}
+        newuserobj={username:conn}
+        if(findDict(logins, newUsr,"username") =="n"):
+            logins.update(newUsr)
+            userobj.update(newuserobj)
+            print "User added: ",logins        
+    except:
+        pass
 def sendMsg(conn,msg):
-    conn.send(msg)
-
+    try:
+        conn.send(msg)
+    except:
+        pass
         
 def validateLogin(data):
     try:
@@ -49,37 +56,41 @@ def validateLogin(data):
         print ex
             
 def register(data):
-    for d in users.keys():
-        print data[d]
-    print data 
+    try:
+        for d in users.keys():
+            print data[d]
+        print data
+    except:
+        pass 
 
 def processData(conn,data):
-    if(data!=""):
-        data=data.replace("'", "\"")
-        data=json.loads(data)
-        if("login" in data.keys()):
-            if(validateLogin(data)):
-                sendMsg(conn, "loginSuccess")
-                dt=data["login"]
-                addUsers(conn,dt["username"])
-                
-        elif("register" in data.keys()):
-            register(data)   
-        elif("view" in data.keys()):
-            lg={"userlist":logins}
-            sendMsg(conn, str(lg))  
-        elif("user" in data.keys()):
-            lg={"useravail":"yes"}
-            sendMsg(conn, str(lg))  
-        elif("usermsg" in data.keys()):
-            print data
-            msgdata={"receive":data["usermsg"],"sender":data["sender"],"receiver":data["usr"]}
-            getConn=userobj[data["usr"]]
-            sendMsg(getConn, str(msgdata))
-    
+    try:
+        if(data!=""):
+            data=data.replace("'", "\"")
+            data=json.loads(data)
+            if("login" in data.keys()):
+                if(validateLogin(data)):
+                    sendMsg(conn, "loginSuccess")
+                    dt=data["login"]
+                    addUsers(conn,dt["username"])
+                    
+            elif("register" in data.keys()):
+                register(data)   
+            elif("view" in data.keys()):
+                lg={"userlist":logins}
+                sendMsg(conn, str(lg))  
+            elif("user" in data.keys()):
+                lg={"useravail":"yes"}
+                sendMsg(conn, str(lg))  
+            elif("usermsg" in data.keys()):
+                print data
+                msgdata={"receive":data["usermsg"],"sender":data["sender"],"receiver":data["usr"]}
+                getConn=userobj[data["usr"]]
+                sendMsg(getConn, str(msgdata))
+    except:
+        pass
 
 def clientthread(conn):
-    
     conn.send('connected') 
     try:
         while True:        
