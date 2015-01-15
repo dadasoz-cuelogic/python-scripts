@@ -1,0 +1,5 @@
+print "Hi"
+print "Hello"
+print "How R U?"
+print "I m fine."
+print "byeeee....."
