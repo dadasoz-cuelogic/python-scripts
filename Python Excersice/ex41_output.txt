@@ -1,0 +1,86 @@
+it121@it121:~/git_work/tempfaiz/python-scripts/Python Excersice$ subl test.py
+it121@it121:~/git_work/tempfaiz/python-scripts/Python Excersice$ python test.py
+class Brush(object):
+	def __init__(self, aftermath)
+> class Brush has -a__init__ that takesself and aftermath parameters
+ANSWER:  class Brush has-a __init__ that takes self and aftermath parameters.
+
+
+class Cherry(Chair):
+> make a class named Cherry that is - a Chair
+ANSWER:  Make a class named Cherry that is-a Chair.
+
+
+children.believe = 'dad'
+> from children get the belive attribute and set it to 'dad'
+ANSWER:  From children get the believe attribute and set it to 'dad'.
+
+
+advice = Amusement()
+> set advice to an instance of class Amusement
+ANSWER:  Set advice to an instance of class Amusement.
+
+
+brother.cakes(church)
+> from brother get the cakes function, and call it with parameter self, church
+ANSWER:  From brother get the cakes function, and call it with parameters self, church.
+
+
+class Crowd(object):
+	def beginner(self, bird, crayon, collar)
+> class Crowd has-a beginer function that takes self, bird, crayon, collar^[[D^[parameters
+ANSWER:  class Crowd has-a function named beginner that takes self and bird, crayon, collar parameters.
+
+
+connection = Arch()
+> set connection to an instance of class Arch
+ANSWER:  Set connection to an instance of class Arch.
+
+
+beetle.bone(cloud)
+> from beetle get the function bone and call it with parameter self, cloud
+ANSWER:  From beetle get the bone function, and call it with parameters self, cloud.
+
+
+class Base(object):
+	def arm(self, cart, bit)
+> class Base has-a arm function that takes self, cart and bit parameters
+ANSWER:  class Base has-a function named arm that takes self and cart, bit parameters.
+
+
+deer.donkey = 'dinner'
+> from deer get the donkey attribute and set it to 'dinner'
+ANSWER:  From deer get the donkey attribute and set it to 'dinner'.
+
+
+class Cream(Bee):
+> Make a class named Cream that is-a Bee
+ANSWER:  Make a class named Cream that is-a Bee.
+
+
+class Bead(object):
+	def __init__(self, apple)
+> class Bead has-a __init__ that takes self and apple parameters
+ANSWER:  class Bead has-a __init__ that takes self and apple parameters.
+
+
+class Cannon(object):
+	def __init__(self, bone)
+> class Cannon has-a __init__ that takes self and apple parameters
+ANSWER:  class Cannon has-a __init__ that takes self and bone parameters.
+
+
+class Cat(object):
+	def cherry(self, coach)
+> class Cat has-a cherry that takes self and coach parameters
+ANSWER:  class Cat has-a function named cherry that takes self and coach parameters.
+
+
+class Bell(Connection):
+> makes a class named Bell that is-a Connection
+ANSWER:  Make a class named Bell that is-a Connection.
+
+
+chair.building(cable, cream)
+> 
+Bye
