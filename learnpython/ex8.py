@@ -8,14 +8,21 @@ numbers = [
     743, 527
 ]
 
-cnt=0
-for x in numbers:
-	if(x < 237):
-		if x%2 == 0:
-			print x
-			cnt+=1  
+#cnt=0
+"""for x in numbers:
+	if x is 237:
+		break
+	if x % 2 == 0:
+			print x"""
+
+
+listl = [i for i in numbers[:numbers.index(237)] if i % 2 == 0]
+print listl
+			  
+
+#print filter((lambda x:x is 237),[x for x in numbers if x%2 == 0])
 
 
 #print filter((lambda x:x<273),[x for x in numbers if x%2 == 0])
 
-print "Count of x is %d" % cnt
+#print "Count of x is %d" % cnt
