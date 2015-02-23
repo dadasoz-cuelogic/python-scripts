@@ -1,0 +1,4 @@
+hello
+gud morning guyssss.
+the code is much simpler now with each function doing one small thing. 
+We can move all these functions into a separate module and reuse it in other programs.
