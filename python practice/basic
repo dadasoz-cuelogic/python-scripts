@@ -1,0 +1,15 @@
+create git repo 
+clone repo with project name
+app get install app u need i.e dependencies
+create db(clear all commits before next one wiht same username db)
+create virtualenv with same name
+decativate
+install al using appget
+workon virtual
+pip install -r requirement.txt/pip freeze > requirement.txt
+pip freeze
+setting .py with username password
+add library in inlude in requirements
+also get app-get apps list in file
+evrey thing is listed insetup/readme
+
