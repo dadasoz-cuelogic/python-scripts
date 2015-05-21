@@ -1,0 +1,56 @@
+{% extends 'default/base.html' %}
+{% load staticfiles %}
+{% block title %}Profile{% endblock %}
+
+{% block body_block %}
+<div class="container">
+  <div class="row">
+      <div class="col-md-7">
+    
+      <div class="panel panel-default">
+                  <div class="panel-body">
+                        <div class="panel panel-primary">
+                              <div class="panel-heading"> 
+                                    <h3>My Profile</h3>
+                              </div>
+                        </div>
+                        <div class="bg-success"> 
+                              <div class="row">
+                              <div class="col-xs-20 col-sm-8">
+                              
+                                          <p><strong>Username: </strong>{{ user.username }}</p>
+                                          <p><strong>Website:</strong><a href="{{ userprofile.website }}">{{userprofile.website}}</a></p>
+                                          <p><strong>Email: </strong>{{user.email}} </p>
+                                          <p><strong>About: </strong> Python developer. </p>
+                                          <p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
+                                          <p><strong>Skills: </strong>
+                                                <span class="label label-info tags">HTML5</span> 
+                                                <span class="label label-info tags">CSS3</span>
+                                                <span class="label label-info tags">JQuery</span>
+                                                <span class="label label-info tags">Bootstrap3</span>
+                                          </p>
+                                    
+                              </div><!--/col-->          
+                              <div class="col-xs-15 col-sm-4 text-center">
+                                    <img src="{{ userprofile.picture.url }}" class="img-circle" alt="abc" width="170" height="200"/>
+
+                                    <ul class="list-inline ratings text-center" title="Ratings">
+                                          <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                          <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                          <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                          <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                          <li><a href="#"><span class="fa fa-star fa-lg"></span></a></li>
+                                    </ul>
+                              </div><!--/col-->
+                        </div>
+                  </div><!--/row-->
+            </div><!--/panel-body-->
+      </div><!--/panel-->
+
+    
+    
+    </div>
+  </div>
+</div>
+
+{% endblock %}

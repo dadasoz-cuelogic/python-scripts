@@ -129,7 +129,7 @@ STATICFILES_FINDERS = (
 #'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-MEDIA_URL = '/var/'
-MEDIA_ROOT = 'tango_with_django_project'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'tango_with_django_project/media/'
 
 LOGIN_URL = '/rango/login/'

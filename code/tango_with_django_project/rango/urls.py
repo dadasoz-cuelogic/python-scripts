@@ -17,4 +17,5 @@ urlpatterns = patterns('',
     url(r'^goto/$', 'rango.views.track_url', name='goto'),
     url(r'^like_category/$', 'rango.views.like_category', name='like_category'),
     url(r'^suggest_category/$', 'rango.views.suggest_category', name='suggest_category'),
+    url(r'^user_profile/$', 'rango.views.profile', name='user_profile'),
 )
