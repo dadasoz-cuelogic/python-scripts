@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+        {% if cat_list %}
+            <ul>
+                {% for page in cat_list %}
+                <li> {{ page }}</li>
+                {% endfor %}
+            </ul>
+            {% else %}
+                <strong>No suggestionsss.</strong>
+        {% endif %}
+
+{% endblock %}
