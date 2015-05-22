@@ -1,0 +1,15 @@
+#elements are separated by ! comment indicator is #
+#print this in list
+elements 
+elements 
+print 
+comment
+a!b!c
+1!2!3  
+1!2!3  
+1!2!3  
+1!2!3  
+a!b!c 
+1!2!3
+2!3!4
+3!4!5
