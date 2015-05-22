@@ -20,4 +20,8 @@
             <br/>
             <button class="btn btn-primary" type="submit" name="submit">Add Category</button>
         </form>
+        <ul class="pager">
+        <li class="previous"><a href="{% url 'restricted' %}">Previous</a></li>
+        <li class="next"><a href="{% url 'user_profile' %}">Next</a></li>
+    </ul>
 {% endblock %}

@@ -11,7 +11,7 @@
                   <div class="panel-body">
                         <div class="panel panel-primary">
                               <div class="panel-heading"> 
-                                    <h3>My Profile</h3>
+                                    <h3 class= "panel-title"><span class="glyphicon glyphicon-user"></span></span> My Profile</h3>
                               </div>
                         </div>
                         <div class="bg-success"> 
@@ -24,10 +24,10 @@
                                           <p><strong>About: </strong> Python developer. </p>
                                           <p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
                                           <p><strong>Skills: </strong>
-                                                <span class="label label-info tags">HTML5</span> 
-                                                <span class="label label-info tags">CSS3</span>
-                                                <span class="label label-info tags">JQuery</span>
-                                                <span class="label label-info tags">Bootstrap3</span>
+                                                <a href = "http://www.w3schools.com/html/default.asp"><button type="button" class="btn btn-primary">HTML5</button></a>
+                                                <a href = "http://www.w3schools.com/css/default.asp"><button type="button" class="btn btn-success">CSS3</button>
+                                                <a href = "http://www.w3schools.com/bootstrap/"><button type="button" class="btn btn-info">BootStrap</button></a>
+                                                <a href = "http://www.w3schools.com/js/default.asp"><button type="button" class="btn btn-danger">Javascript</button></a>
                                           </p>
                                     
                               </div><!--/col-->          
@@ -48,7 +48,10 @@
       </div><!--/panel-->
 
     
-    
+     <ul class="pager">
+        <li class="previous"><a href="{% url 'add_category' %}">Previous</a></li>
+        <li class="next"><a href="{% url 'about' %}">Next</a></li>
+    </ul>
     </div>
   </div>
 </div>
